@@ -11,64 +11,38 @@
 </head>
 
 <body>
-  <h1>Chapter 11 Notes</h1>
+  <h1>HTML5 and CSS3 for the Real world Chapter 8 Notes</h1>
 
   <hr>
   <h4>Key Terms</h4>
   <ul>
-    <li>Custom Properties - You can add a custom propterty with dot notation</li>
-    <ul>
-      <li>Example: <i>myFunction.description = 'This is my description'</i></li>
-    </ul>
-    <li>Temporary variables - Variable can be instantiated inside an immediately-invoked function express and won't be available afterwards</li>
-    <li>Strict Mode - Forces the browser to not allow sloppy coding practices and has to be strictly written</li>
-    <ul>
-      <li>At top of JS file write <i>'use strict'</i></li>
-    </ul>
-    <li>Recursive function - A function can call itself until a certain condition is met</li>
-    <li>Promise - Represents the future result of an asynchronous operation. Can be done with callbacks but are simpler</li>
-    <ul>
-      <li>Example: <br><i>const promise = new Promise( (resolve, reject) => { <br>
-        // initialization code goes here <br>
-        if (success) { <br>
-            resolve(value); <br>
-        } else { <br>
-            reject(error); <br>
-        }
-    });</i></li>
-    <li>After promise has been settled, you use <i>then()</i> to deal with the outcome</li>
-    <li><i>catch()</i> can be used with then() to deal with the failed state</li>
-    </ul>
-    <li>Pure function</li>
-    <ol>
-      <li>Return value only depends on argument values</li>
-      <li>No side-effects. It doesn't change any other data in the program</li>
-      <li>Referential transparency - with saem arguments, it will always return the same result</li>
-    </ol>
+    <li>Transform
+      <ul>
+        <li>Translate - move left, right, up or down</li>
+        <li>Rotate - Control rotation by degress</li>
+        <li>Scale - increase or decrease by x and y axis</li>
+        <li>Skew - Skews along x and y axis</li>
+      </ul>
+    </li>
+    <li>Transition - Allows you to change CSS properties over time
+      <ul>
+        <li><i>transition-property, transition-duration, transition-timing-function, transition-delay</i></li>
+      </ul>
+    </li>
+    <li>Animations - Controlled with keyframes, like Adobe Premiere</li>
   </ul>
   <hr>
-  <h1>Chapter 13 Notes</h1>
+  <h1>Chapter 12 Notes</h1>
   <ul>
-    <li>AJAX - Asynchronous JavaScript XML</li>
-    <li>fetch() - returns a promise that resolves to the response return from the URL</li>
-    <ul>
-      <li>Example for getting data from an api <i><br>const url = 'https:example.com/data'; <br>
-        fetch(url)<br>
-        .then((response) => {<br>
-            if(response.ok) {<br>
-                return response;<br>
-            }<br>
-            throw Error(response.statusText);<br>
-        })<br>
-        .then( response => // do something with response )<br>
-        .catch( error => console.log('There was an error!') )</i></li>
-    </ul>
-    <li>Redirect - redirects to another URL</li>
-    <li>blob() - reads file of raw data such as an image or spreadsheet</li>
-    <li>json() - turns JSON data into a JavaScript object to make it easier to deal with</li>
+    <li>Canvas - Lets you draw on a 2D or 3D space</li>
+    <li>SVG - Scalable Vector Graphics
+      <ul>
+        <li>SVG will maintain quality no matter the scale</li>
+      </ul>
+    </li>
   </ul>
   <hr>
-  <p>How do organizations handle who can and cannot use their API? For example, I know facebook, twitter and other orgs have API's. Can they be used freely?</p>
+  <p>Chapter 8 talked a lot about how there are certain prefixes for compatibility for older browsers. How do you know what you ned to add for each browser?</p>
 </body>
 
 </html>
