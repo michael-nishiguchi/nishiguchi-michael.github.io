@@ -43,7 +43,9 @@ document.getElementById('render').onclick = function renderTodo() {
 	var i;
 	for (i = 0; i < todoList.length; i++) {
 		document.getElementById('tasks').innerHTML +=
-			'<li><span class="check">X</span><span class="item">' +
+			'<li><span class="check">X</span><span class="item" id="' +
+			i +
+			'">' +
 			todoList[i].task +
 			'</span><span class="X">X</span></li>';
 	}
