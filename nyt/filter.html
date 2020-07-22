@@ -1,8 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Somethin' Good</title>
+    <title>Somethin' Good | Filter</title>
     <script src="scripts/main.js"></script>
     <script src="scripts/nav.js"></script>
     <link rel="stylesheet" href="main.css">
@@ -11,12 +11,13 @@
       </style>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body onload="getTopStories()">
+  <body>
     <header>
+
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="filter.html">Filter</a>
+        <a href="index.html">Home</a>
+        <a href="#">Filter</a>
         <a href="search.html">Search</a>
         <a href="#">Contact</a>
         <input type="text" placeholder="Search..">
@@ -24,8 +25,17 @@
       </div>
       <h1><span style="cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>Somethin' Good</h1>
     </header>
-
     <div id="main">
+      <h2>Add words or phrases you want to avoid</h2>
+      <form class="filterForm" onsubmit="customFilter(); return false;">
+        <input type="text" id="filter1" placeholder="1st word">
+        <input type="text" id="filter2" placeholder="2nd word">
+        <input type="text" id="filter3" placeholder="3rd word">
+        <input type="text" id="filter4" placeholder="4th word">
+        <input type="text" id="filter5" placeholder="5th word">
+        <br>
+        <button type="submit">Submit</button>
+      </form>
       <div id="topStories"></div>
     </div>
   </body>

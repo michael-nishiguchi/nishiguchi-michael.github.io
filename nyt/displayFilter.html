@@ -1,8 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Somethin' Good</title>
+    <title>Somethin' Good | Filter</title>
     <script src="scripts/main.js"></script>
     <script src="scripts/nav.js"></script>
     <link rel="stylesheet" href="main.css">
@@ -11,19 +11,21 @@
       </style>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body onload="getTopStories()">
+  <body>
     <header>
+
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="filter.html">Filter</a>
-        <a href="search.html">Search</a>
+        <a href="index.html">Home</a>
+        <a href="#">Filter</a>
+        <a href="#">Clients</a>
         <a href="#">Contact</a>
         <input type="text" placeholder="Search..">
         <button type="submit"><i class="fa fa-search"></i></button>
       </div>
       <h1><span style="cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>Somethin' Good</h1>
     </header>
+    <h2>Results</h2>
 
     <div id="main">
       <div id="topStories"></div>

@@ -10,13 +10,30 @@
 }
 
 article {
-	//border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	margin-bottom: 20px;
 }
 
+#topStories a {
+	text-decoration: none;
+	color: black;
+}
+#topStories a:hover {
+	color: gray;
+}
+
 article img {
 	width: 100%;
+	transition: transform .2s;
+	padding-bottom: 10px;
+}
+
+button {
+	margin-bottom: 20px;
+}
+
+#topStories img:hover {
+	transform: scale(1.1);
 }
 
 h2 {
@@ -31,15 +48,16 @@ body {
 	margin: 0;
 }
 
+li {
+	list-style: none;
+}
+
 header {
 	background-color: black;
 	margin: 0 0 20px 0;
 	padding: 30px;
 }
 
-#topStories {
-	padding: 0 20px 0 20px;
-}
 h1 {
 	font-family: 'Abril Fatface', cursive;
 	letter-spacing: 3px;
@@ -47,13 +65,17 @@ h1 {
 	font-size: 5vw;
 	text-align: center;
 	color: white;
+	vertical-align: center;
 }
 
 /* nav nav nav nav */
-
 #hamburger {
 	color: white;
+	font-size: 1em;
+	position: absolute;
+	left: 5%;
 }
+
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -67,13 +89,22 @@ h1 {
 	padding-top: 60px;
 }
 
-.sidenav a {
+.sidenav a,
+.sidenav input {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
 	color: #818181;
 	display: block;
 	transition: 0.3s;
+}
+
+.note {
+	font-style: italic;
+	text-align: center;
+	color: gray;
+	font-size: 90%;
+	margin-bottom: 10px;
 }
 
 .sidenav a:hover {
@@ -87,21 +118,49 @@ h1 {
 	font-size: 36px;
 	margin-left: 50px;
 }
+/*end of nav */
 
 #main {
 	transition: margin-left .5s;
-	padding: 16px;
+	padding: 5%;
+}
+.filterForm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.filterForm input {
+	flex: 0 0 100%;
+
+	font-size: 2rem;
+	padding: 20px 0 20px 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+}
+
+.filterForm button {
+	padding: 20px;
+	font-size: 2rem;
+	margin-left: 5%;
 }
 
 @media (min-width: 768px) {
 	#topStories {
 		display: flex;
-		background-color: blue;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	article {
+		justify-content: space-between;
+		flex-basis: 45%;
 	}
 
 	h1 {
 		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 2vw;
 	}
 }
