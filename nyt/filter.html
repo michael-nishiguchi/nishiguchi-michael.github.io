@@ -19,15 +19,13 @@
         <a href="index.html">Home</a>
         <a href="#">Filter</a>
         <a href="search.html">Search</a>
-        <a href="#">Contact</a>
-        <input type="text" placeholder="Search..">
-        <button type="submit"><i class="fa fa-search"></i></button>
       </div>
       <h1><span style="cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>Somethin' Good</h1>
     </header>
     <div id="main">
-      <h2>Add words or phrases you want to avoid</h2>
+      <h2>Add words or phrases you want to avoid. If you leave the seach box blank, it will show the top stories</h2>
       <form class="filterForm" onsubmit="customFilter(); return false;">
+        <input type="text" id="search1" placeholder="Search Term">
         <input type="text" id="filter1" placeholder="1st word">
         <input type="text" id="filter2" placeholder="2nd word">
         <input type="text" id="filter3" placeholder="3rd word">
